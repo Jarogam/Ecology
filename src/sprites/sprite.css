@@ -1,0 +1,72 @@
+/*
+Icon classes can be used entirely standalone. They are named after their original file names.
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+.icon-ad-icon-white {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -1589px;
+  width: 22px;
+  height: 34px;
+}
+.icon-ad-icon {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -2123px;
+  width: 22px;
+  height: 34px;
+}
+.icon-ad-icon2 {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -2657px;
+  width: 33px;
+  height: 34px;
+}
+.icon-ad-icon3 {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -4263px;
+  width: 24px;
+  height: 40px;
+}
+.icon-ad-icon4 {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -1057px;
+  width: 26px;
+  height: 32px;
+}
+.icon-ad-icon5 {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -3191px;
+  width: 33px;
+  height: 35px;
+}
+.icon-ad-icon6 {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -3726px;
+  width: 38px;
+  height: 37px;
+}
+.icon-call {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -527px;
+  width: 36px;
+  height: 30px;
+}
+.icon-toll {
+  background-image: url(../img/sprite.png);
+  background-position: 0px 0px;
+  width: 35px;
+  height: 27px;
+}

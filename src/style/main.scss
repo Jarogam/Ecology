@@ -1,0 +1,30 @@
+/*
+* Third Party
+*/
+@import "bootstrap-grid.min.css";
+@import "bootstrap.min.css";
+@import "swiper.min.css";
+@import "fontawesome.min.css";
+@import "brands.min.css";
+// /* @import "../../assets/font-awesome.min.css"; */
+
+
+/*
+* Custom
+*/
+@import "partials/variable";
+@import "partials/colors";
+@import "partials/fonts";
+@import "partials/taxonomies";
+@import "partials/buttons";
+
+
+
+@import "views/header";
+@import "views/home";
+@import "views/footer";
+
+@import "partials/media";
+
+
+

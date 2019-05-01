@@ -1,0 +1,16 @@
+{
+  "name": "Start Temmplate",
+  "version": "1.0.0",
+  "homepage": "",
+  "authors": [
+    ""
+  ],
+  "description": "Clean task runner",
+  "moduleType": [
+    "globals"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "normalize.css": "*"
+  }
+}
