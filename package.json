@@ -19,7 +19,8 @@
     "gulp-watch": "^4.1.1",
     "imagemin-pngquant": "^4.0.0",
     "npm": "^6.0.1",
-    "rimraf": "^2.3.1"
+    "rimraf": "^2.3.1",
+    "tabslet": "^1.7.3"
   },
   "devDependencies": {
     "gulp-plumber": "^1.2.1",

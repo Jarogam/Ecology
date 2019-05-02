@@ -1,0 +1,1 @@
+jQuery(document).ready(function(t){var e=function(){t(".burger").click(function(e){t(this).toggleClass("open"),e.preventDefault(),t(this).toggleClass("is-active"),t(".nav").toggleClass("is-active")})};e()}),$(".tabs").tabslet({mouseevent:"click",attribute:"href",animation:!0});

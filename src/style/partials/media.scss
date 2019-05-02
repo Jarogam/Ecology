@@ -1,0 +1,206 @@
+@media (max-width: 1200px){
+    .nav{
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 10;
+        height: 100%;
+        width: 320px;
+        padding: 60px 0 40px;
+        background-color: #fff;
+        box-shadow: 0 5px 15px rgba(#000, 0.1);
+        transition: all 0.25s ease;
+        transform: translateX(100%);
+        overflow-y: auto;
+        -webkit-overflow-scrolling: touch;
+
+        &.is-active {
+            transform: translateX(0);
+        }
+        ul {
+            li {
+                float: none;
+            }
+        }
+    }
+    // .header__infomenu button{
+    //     display: block;
+    // }
+    .burger {
+        display: block;
+    }
+    .develop-doc{
+        padding-top: 180px;
+    }
+
+    .header {
+        &__infomenu--call {
+            margin-right: 70px;
+        }
+    }
+    .develop-doc__books--circle1{
+        top: 80px;
+        right: 155px;
+    }
+}
+@media (max-width: 991px){
+    // .header__navmenu{
+    //     display: none;
+    // }
+    .forwho__block:last-child{
+        margin-top: 20px;
+    }
+    .header__infomenu--text{
+        display: none;
+    }
+    .header__infomenu--mobile p{
+        display: none;
+    }
+    
+    .develop-doc {
+        text-align: center;
+        h1 {
+            max-width: 100%;
+        }
+    }
+    .develop-doc{
+        padding-top: 150px;
+    }
+    .develop-doc__books--circle1{
+        top: 140px;
+        right: 245px;
+        width: 180px;
+        height: 180px;
+        border-radius: 110px;
+    }
+    .develop-doc__books--circle2{
+        width: 140px;
+        height: 140px;
+        border-radius: 70px;
+        top: 20px;
+        right: 20px;
+    }
+    .develop-doc__books--circle2 img{
+        width: 80px;
+        height: 80px;
+    }
+    .develop-doc__books--circle2 span{
+        top: 40px;
+    }
+}
+
+@media (max-width: 767px){
+    .develop-doc h1 {
+        font-size: 35px;
+        span{
+            font-size: 25px;
+        }
+    }
+    .header__infomenu--call a:first-child {
+        display: block;
+        font-size: 20px;
+    }
+    .header__infomenu--call a:last-child {
+        font-size: 12px;
+    }
+    .develop-doc__books--circle1{
+        top: 80px;
+        left: 170px;
+    }
+}
+@media (max-width: 575px){
+    .logo img{
+        max-width: 120px;
+    }
+    .develop-doc h1 {
+        font-size: 25px;
+        text-align: center;
+        span{
+            font-size: 15px;
+            text-align: center;
+        }
+    }
+    .forwho__block--item__title{
+        h3{
+            font-size: 18px;
+
+        }
+    }
+    .develop-doc__books--circle1{
+        left: 185px;
+    }
+    .header__infomenu--mobile{
+        display: none;
+    }
+    .forwho__block--item{
+        img{
+            width: 50%;
+        }
+    }
+}
+@media (max-width: 480px){
+
+}
+@media (max-width: 414px){
+    .develop-doc__books--circle1{
+        width: 120px;
+        height: 120px;
+        left: 140px;
+        top: 70px;
+    }
+    .develop-doc__books--circle2{
+        width: 100px;
+        height: 100px;
+        top: 10px;
+        left: 10px;
+    }
+    .develop-doc__books--circle2{
+        img{
+            width: 50px;
+            margin-top: 0px;
+            margin-left: 10px;
+        }
+    }
+    .develop-doc__books--circle2{
+        span{
+            top: 10px;
+            font-size: 12px;
+        }
+    }
+}
+@media (max-width: 360px){
+    .develop-doc__books--circle1{
+        width: 100px;
+        height: 100px;
+        left: 120px;
+        top: 60px;
+    }
+    .develop-doc__books--circle2{
+        width: 80px;
+        height: 80px;
+        top: 10px;
+        left: 10px;
+    }
+    .develop-doc__books--circle2{
+        img{
+            width: 50px;
+            margin-top: 0px;
+            margin-left: 10px;
+        }
+    }
+    .develop-doc__books--circle2{
+        span{
+            top: 10px;
+            font-size: 12px;
+        }
+    }
+}
+
+@media (max-width: 320px){
+    .develop-doc__books--circle1{
+        width: 100px;
+        height: 100px;
+        left: 100px;
+        top: 50px;
+    }
+}

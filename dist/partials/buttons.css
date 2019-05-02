@@ -1,0 +1,14 @@
+.more-btn {
+  color: #fff;
+  box-shadow: 0 8px 30px rgba(255, 112, 67, 0.3), inset 0 -3px 2px rgba(0, 0, 0, 0.3);
+  border-radius: 6px;
+  background-image: linear-gradient(to top, #ff6633 0%, #f59840 100%);
+  padding: 15px 35px;
+  text-decoration: none;
+  font-family: 'HelveticaNeueCyr-Medium';
+  font-size: 14px;
+  display: inline-block; }
+
+.more-btn:hover {
+  color: #fff;
+  text-decoration: none; }

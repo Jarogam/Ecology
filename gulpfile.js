@@ -16,17 +16,11 @@ var gulp = require('gulp'),
     spritesmith = require('gulp.spritesmith');
 var plumber = require('gulp-plumber');
 var coffee = require('gulp-coffee');
- 
-gulp.src('./src/*.ext')
-    .pipe(plumber())
-    .pipe(coffee())
-    .pipe(gulp.dest('./dist'));
 
-gulp.src('./src/*.scss')
+gulp.src('./src/style/**/*.scss')
     .pipe(plumber())
-    .pipe(sass())
-    .pipe(uglify())
-    .pipe(plumber.stop())
+    .pipe(sass().on('error', sass.logError))
+    // .pipe(uglify())
     .pipe(gulp.dest('./dist'));
 
 
