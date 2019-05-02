@@ -10,5 +10,6 @@
   display: inline-block; }
 
 .more-btn:hover {
-  color: #fff;
+  color: #000;
+  background-color: #ff6633;
   text-decoration: none; }

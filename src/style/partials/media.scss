@@ -44,16 +44,13 @@
     }
 }
 @media (max-width: 991px){
-    // .header__navmenu{
-    //     display: none;
-    // }
     .forwho__block:last-child{
         margin-top: 20px;
     }
-    .header__infomenu--text{
+    .header__infomenu--left__text{
         display: none;
     }
-    .header__infomenu--mobile p{
+    .header__infomenu--right p{
         display: none;
     }
     
@@ -107,6 +104,9 @@
         top: 80px;
         left: 170px;
     }
+    .header{
+        padding-top: 15px;
+    }
 }
 @media (max-width: 575px){
     .logo img{
@@ -129,17 +129,34 @@
     .develop-doc__books--circle1{
         left: 185px;
     }
-    .header__infomenu--mobile{
+    .header__infomenu--right .header__infomenu--call{
         display: none;
     }
+
     .forwho__block--item{
         img{
             width: 50%;
         }
     }
+    .develop-doc h1 span::after{
+        display: none;
+    }
 }
 @media (max-width: 480px){
-
+    .logo{
+        img{
+            max-width: 100px;
+        }
+    }
+    .header__infomenu--call__link{
+        font-size: 15px;
+    }
+    .header__infomenu--call__callback{
+        font-size: 10px;
+    }
+    .header__infomenu--right{
+        margin: 0px;
+    }
 }
 @media (max-width: 414px){
     .develop-doc__books--circle1{

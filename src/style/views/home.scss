@@ -9,6 +9,7 @@
     color: #000;
     text-transform: uppercase;
     max-width: 540px;
+    letter-spacing: -0.7px;
     span{
         color: #00ccff;
         font-size: 24px;
@@ -19,7 +20,7 @@
         content: "";
         display: inline-block;
         background-color: #00ccff;
-        width: 50px;
+        width: 120px;
         height: 2px;
         margin-bottom: 10px;
     }
@@ -52,8 +53,8 @@
     position: absolute;
     width: 140px;
     height: 140px;
-    top: 130px;
-    right: 220px;
+    top: 100px;
+    right: 175px;
     background-color: #f663377a;
     border-radius: 75px;
 }
@@ -84,7 +85,7 @@
     position: relative;
     span{
         position: absolute;
-        transform: rotate(270deg);
+        transform: rotate(90deg);
         right: -56px;
         bottom: 5px;
         font-family: HelveticaNeueCyr-Medium;

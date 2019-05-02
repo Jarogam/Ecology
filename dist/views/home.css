@@ -8,7 +8,8 @@
     font-size: 40px;
     color: #000;
     text-transform: uppercase;
-    max-width: 540px; }
+    max-width: 540px;
+    letter-spacing: -0.7px; }
     .develop-doc h1 span {
       color: #00ccff;
       font-size: 24px;
@@ -18,7 +19,7 @@
       content: "";
       display: inline-block;
       background-color: #00ccff;
-      width: 50px;
+      width: 120px;
       height: 2px;
       margin-bottom: 10px; }
   .develop-doc p {
@@ -46,8 +47,8 @@
   position: absolute;
   width: 140px;
   height: 140px;
-  top: 130px;
-  right: 220px;
+  top: 100px;
+  right: 175px;
   background-color: #f663377a;
   border-radius: 75px; }
 
@@ -75,7 +76,7 @@
   position: relative; }
   .develop-doc__down span {
     position: absolute;
-    transform: rotate(270deg);
+    transform: rotate(90deg);
     right: -56px;
     bottom: 5px;
     font-family: HelveticaNeueCyr-Medium;
@@ -125,3 +126,12 @@
       font-size: 14px;
       font-family: 'GothamPro-Black';
       color: #000; }
+
+.wehelp {
+  background-color: #f7f7f7;
+  padding-top: 50px;
+  padding-bottom: 50px; }
+  .wehelp h2 {
+    text-align: center; }
+  .wehelp p {
+    text-align: center; }
