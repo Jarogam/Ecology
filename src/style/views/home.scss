@@ -32,8 +32,12 @@
         margin-bottom: 20px;
     }
 }
+
 .develop-doc__more{
     margin-top: 60px;
+
+}
+.more{
     span{
         color: #0cf;
         font-size: 12px;
@@ -49,37 +53,70 @@
         width: 100%;
     }
 }
-.develop-doc__books--circle1{
+.develop-doc__books--circle{
     position: absolute;
     width: 140px;
     height: 140px;
     top: 100px;
     right: 175px;
-    background-color: #f663377a;
-    border-radius: 75px;
-}
-.develop-doc__books--circle2{
-    
     background-color: #f63;
-    width: 110px;
-    height: 110px;
-    border-radius: 55px;
-    position: absolute;
-    top: 15px;
-    right: 15px;
+    border-radius: 75px;
+    z-index: 2;
     img{
         width: 60px;
         height: 60px;
-        margin-top: 25px;
-        margin-left: 30px;
+        margin-top: 40px;
+        margin-left: 45px;
     }
     span{
         color: #fff;
         position: absolute;
         font-family: 'GothamPro-Medium';
-        top: 30px;
+        top: 40px;
         left: 15px;
     }
+}
+.develop-doc__books--circle::before{
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: -20px;
+    top: -20px;
+    background-color: #874773;
+    width: 180px;
+    height: 180px;
+    border-radius: 90px;
+    
+}
+
+.develop-doc__books--circle::before:hover {
+  animation: pulse 2s infinite;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 #874773;
+  }
+  70% {
+      -webkit-box-shadow: 0 0 0 10px #874773;
+  }
+  100% {
+      -webkit-box-shadow: 0 0 0 0 #874773;
+  }
+}
+@keyframes pulse {
+  0% {
+    -moz-box-shadow: 0 0 0 0 #874773;
+    box-shadow: 0 0 0 0 #874773;
+  }
+  70% {
+      -moz-box-shadow: 0 0 0 10px #874773;
+      box-shadow: 0 0 0 10px #874773;
+  }
+  100% {
+      -moz-box-shadow: 0 0 0 0 #874773;
+      box-shadow: 0 0 0 0 #874773;
+  }
 }
 .develop-doc__down{
     position: relative;
@@ -102,10 +139,10 @@
     }
 }
 
-// for who section
+// forwho section
 .forwho{
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 70px;
+    padding-bottom: 80px;
     h2{
         text-align: center;
         font-size: 30px;
@@ -148,15 +185,226 @@
         }
     }
 }
+
+// wehelp  section
 .wehelp{
     background-color:#f7f7f7;
-    padding-top: 50px;
+    padding-top: 70px;
+    padding-bottom: 140px;
+    h2{
+        text-align: center;
+        font-family: 'GothamPro-Medium';
+        font-size: 30px;
+        color: #000;
+    }
+    p{
+        text-align: center;
+        font-size: 18px;
+        font-family: 'HelveticaNeueCyr-Roman';
+        margin-bottom: 40px;
+    }
+}
+.horizontal{
+    border-bottom: 1px solid #f0f0f0;
+    padding-bottom: 30px;
+    list-style: none;
+    overflow: hidden;
+    padding-left: 0;
+    display: flex;
+    justify-content: space-evenly;
+    li{
+        float: left;
+        text-align: center;
+        a{
+            color: #336699;
+            font-size: 14px;
+            font-family: 'GothamPro-Medium';
+            text-decoration: none;
+        }
+        a:hover{
+            color: #ff6633;
+        }
+    }
+    li:focus{
+        border-bottom:  2px solid #336699; 
+    }
+}
+.tabs{
+    margin-bottom: 20px;
+}
+.tab-item{
+    display: inline-block;
+    width: 47%;
+    margin: 15px;
+    img{
+        width: 75px;
+    }
+    span{
+        display: inline-block;
+        width: 70%;
+        margin-left: 30px;
+        font-size: 14px;
+        font-family: 'HelveticaNeueCyr-Medium';
+        color: #000;
+    }
+
+}
+.wehelp__more{
+    position: relative;
+}
+.wehelp__more--item{
+    position: absolute;
+    right: 35px;
+    top: 10px;
+}
+
+
+// whytrust  section
+.whytrust{
     padding-bottom: 50px;
+    padding-top: 75px;
+    h2{
+        text-align: center;
+        margin-bottom: 65px;
+        font-family: 'GothamPro-Medium';
+        font-size: 30px;
+        
+    }
+}
+.whytrust--block{
+    display: flex;
+}
+.whytrust--block__item{
+    position: relative;
+    width: 25%;
+    // padding: 0px 5px 0px 10px;
+
+    img{
+        width: 68px;
+        margin-bottom: 30px;
+        margin-left: 10px;
+    }
+    span{
+        font-family: 'GothamPro-BoldItalic';
+        font-size: 14px;
+        color: #606660;
+        position: absolute;
+        top: 55px;
+        left: 100px;
+    }
+    .whytrust--block__item--title{
+        color: #336699;
+        font-size: 16px;
+        font-family: 'GothamPro-Medium';
+            margin-bottom: 10px;
+    }
+    p{
+        color: #000;
+        font-size: 14px;
+        font-family: 'HelveticaNeueCyr-Roman';
+    }
+
+}
+.whytrust--block__item--img{
+    width: 62px;
+    height: 62px;
+    background-color: #f7f7f7;
+    position: absolute;
+    top: 0;
+    left: 35px;
+    z-index: -1;
+}
+.whytrust--block__item::after{
+    content: "- - - - - - - - - - - - - - - - -";
+    position: absolute;
+    top: 20px;
+    right: 15px;
+    color: #e1f0e1;
+    font-weight: 700;
+}
+.whytrust--block__item:last-child::after{
+    display: none;
+}
+.laboratory{
+    padding-top: 80px;
+    padding-bottom: 40px;
+
     h2{
         text-align: center;
     }
     p{
         text-align: center;
     }
+}
+// stages  section
+.stages{
+    background: url(../../img/car.jpg) no-repeat center / cover;
+
+    h2{
+        text-align: center;
+        color: #fff;
+        font-family: 'GothamPro-Medium';
+        font-size: 30px;
+    }
+    
+}
+.stages--bg{
+    padding-bottom: 130px;
+    padding-top: 50px;
+    background-color: #030502;
+    opacity: 0.8;
+}
+.stages--bg__rating{
+    display: inline-block;
+    width: 48%;
+    color: #fff;
+    span{
+        font-family: 'GothamPro';
+        font-size: 16px;
+    }
+    p{
+        font-family: 'HelveticaNeueCyr-Roman';
+        font-size: 14px;
+        letter-spacing: 0.28px;
+    }
+}
+.stages--bg__list{
+    display: inline-block;
+    width: 48%;
+    color: #fff;
+    ul{
+        li{
+            font-family: 'GothamProRegular';
+            font-size: 14px;
+            span{
+
+            }
+        }
+        // li:nth-child(2){}
+        // li:nth-child(){}
+    }
+}
+.stages--bg__rating--img{
+    background: url(../../img/mens.jpg) no-repeat top -25px right -115px / auto ;
+    height: 245px;
+    width: 245px;
+    border-radius: 120px;
+    position: relative;
 
 }
+.stages--bg__rating--img__icon{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 90px;
+    height: 90px;
+    background-color: #000;
+    border-radius: 45px;
+    text-align: center;
+    img{
+        padding-top: 20px;
+        width: 50px;
+    }
+}
+
+//   section

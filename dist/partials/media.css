@@ -25,7 +25,21 @@
     margin-right: 70px; }
   .develop-doc__books--circle1 {
     top: 80px;
-    right: 155px; } }
+    right: 155px; }
+  .tab-item {
+    width: 45%; }
+  .whytrust--block__item {
+    padding-right: 5px; }
+  .whytrust--block__item .whytrust--block__item--title {
+    font-size: 13px; }
+  .whytrust--block__item::after {
+    content: "- - - - - - - - - - - - -";
+    right: 10px; }
+  .whytrust--block__item p {
+    font-size: 12px; }
+  .laboratory img {
+    max-width: 400px;
+    width: 47%; } }
 
 @media (max-width: 991px) {
   .forwho__block:last-child {
@@ -56,7 +70,13 @@
     width: 80px;
     height: 80px; }
   .develop-doc__books--circle2 span {
-    top: 40px; } }
+    top: 40px; }
+  .tab-item span {
+    width: 60%;
+    vertical-align: middle; }
+  .whytrust--block__item::after {
+    content: "- - - - - - -";
+    right: 5px; } }
 
 @media (max-width: 767px) {
   .develop-doc h1 {
@@ -68,15 +88,63 @@
     font-size: 20px; }
   .header__infomenu--call a:last-child {
     font-size: 12px; }
+  .develop-doc {
+    padding-bottom: 40px;
+    padding-top: 120px; }
   .develop-doc__books--circle1 {
     top: 80px;
     left: 170px; }
   .header {
-    padding-top: 15px; } }
+    padding-top: 15px; }
+  .tab-item {
+    width: 100%;
+    text-align: center; }
+  .horizontal {
+    flex-direction: column;
+    border: none;
+    padding-bottom: 0px; }
+    .horizontal li {
+      margin-bottom: 10px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #333; }
+  .forwho {
+    padding-bottom: 40px;
+    padding-top: 30px; }
+    .forwho h2 {
+      margin-bottom: 20px; }
+  .wehelp {
+    padding-bottom: 90px;
+    padding-top: 30px; }
+  .whytrust {
+    padding-top: 30px;
+    padding-bottom: 5px; }
+  .whytrust h2 {
+    margin-bottom: 30px; }
+  .whytrust--block {
+    flex-direction: column;
+    text-align: center; }
+  .whytrust--block__item {
+    width: 100%;
+    margin-bottom: 20px; }
+  .whytrust--block__item img {
+    margin-bottom: 10px; }
+  .whytrust--block__item--img {
+    left: 245px; }
+  .whytrust--block__item span {
+    position: initial; }
+  .whytrust--block__item::after {
+    display: none; }
+  .laboratory img {
+    text-align: center;
+    width: 100%;
+    max-width: 100%; } }
 
 @media (max-width: 575px) {
   .logo img {
     max-width: 120px; }
+  .develop-doc {
+    padding-bottom: 10px;
+    padding-top: 90px; }
   .develop-doc h1 {
     font-size: 25px;
     text-align: center; }
@@ -92,6 +160,13 @@
   .forwho__block--item img {
     width: 50%; }
   .develop-doc h1 span::after {
+    display: none; }
+  .header__navmenu ul {
+    max-height: 255px; }
+  .header__navmenu .header__infomenu--call {
+    margin-bottom: 195px;
+    margin-left: 20px; }
+  .whytrust--block__item--img {
     display: none; } }
 
 @media (max-width: 480px) {
@@ -148,3 +223,7 @@
     height: 100px;
     left: 100px;
     top: 50px; } }
+
+@media (min-width: 575px) {
+  .header__navmenu .header__infomenu--call {
+    display: none; } }

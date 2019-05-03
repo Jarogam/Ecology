@@ -22,3 +22,8 @@
   font-family: 'GothamPro-Medium';
   src: url("../fonts/GothamPro-Medium.woff");
   /* IE9 Compat Modes */ }
+
+@font-face {
+  font-family: 'GothamPro-BoldItalic';
+  src: url("../fonts/GothamPro-BoldItalic.woff");
+  /* IE9 Compat Modes */ }
