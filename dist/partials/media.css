@@ -76,7 +76,9 @@
     vertical-align: middle; }
   .whytrust--block__item::after {
     content: "- - - - - - -";
-    right: 5px; } }
+    right: 5px; }
+  .laboratory h2 {
+    font-size: 25px; } }
 
 @media (max-width: 767px) {
   .develop-doc h1 {
@@ -118,6 +120,8 @@
   .whytrust {
     padding-top: 30px;
     padding-bottom: 5px; }
+  .whytrust--block__item {
+    padding: 0px; }
   .whytrust h2 {
     margin-bottom: 30px; }
   .whytrust--block {
@@ -137,7 +141,15 @@
   .laboratory img {
     text-align: center;
     width: 100%;
-    max-width: 100%; } }
+    max-width: 100%; }
+  .wehelp h2 {
+    font-size: 20px; }
+  .wehelp p {
+    font-size: 15px; }
+  .laboratory h2 {
+    font-size: 20px; }
+  .laboratory p {
+    font-size: 15px; } }
 
 @media (max-width: 575px) {
   .logo img {
