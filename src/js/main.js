@@ -15,8 +15,11 @@ jQuery(document).ready(function($) {
 });
 
 // toggle 
-$('.tabs').tabslet({
-    mouseevent: 'click',
-    attribute: 'href',
-    animation: true
+$('.tabs_animate').tabslet({
+        mouseevent: 'click',
+        attribute: 'href',
+        animation: true
+    });
+$('.tabs-active').tabslet({
+    active: 2
 });

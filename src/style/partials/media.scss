@@ -35,11 +35,11 @@
             margin-right: 70px;
         }
     }
-    .develop-doc__books--circle1{
-        top: 80px;
-        right: 155px;
+    .develop-doc__books--circle{
+        top: 100px;
+        right: 160px;
     }
-    .tab-item{
+    .wehelp .tab-item{
         width: 45%;
     }
     .whytrust--block__item {
@@ -59,6 +59,33 @@
         img{
             max-width: 400px;
             width: 47%;
+        }
+
+    }
+    .stages{
+        .tab-item{
+            margin: 0px 20px;
+        }
+    }
+    .underkey{
+
+        img {
+            margin: 0px;
+            width: 100%;
+        }
+        ul{
+            margin-top: 40px;
+            display: flex;
+            justify-content: center;
+            li{
+                width: 33%;
+                // .underkey--list{
+
+                // }
+                .underkey--descr{
+                    width: 55%;
+                }
+            }
         }
 
     }
@@ -83,28 +110,31 @@
     .develop-doc{
         padding-top: 150px;
     }
-    .develop-doc__books--circle1{
+    .develop-doc__books--circle{
         top: 140px;
-        right: 245px;
-        width: 180px;
-        height: 180px;
-        border-radius: 110px;
-    }
-    .develop-doc__books--circle2{
+        right: 250px;
         width: 140px;
         height: 140px;
-        border-radius: 70px;
-        top: 20px;
-        right: 20px;
+        border-radius: 110px;
     }
-    .develop-doc__books--circle2 img{
+    .develop-doc__books--circle::before{
+        left: -15px;
+        top: -15px;
+        width: 170px;
+        height: 170px;
+    }
+    .develop-doc__books--circle img{
         width: 80px;
         height: 80px;
+        margin-top: 30px;
+        margin-left: 25px;
     }
-    .develop-doc__books--circle2 span{
+    .develop-doc__books--circle span{
         top: 40px;
+        font-size: 20px;
+        line-height: 1.5rem;
     }
-    .tab-item span{
+    .wehelp .tab-item span{
         width: 60%;
         vertical-align: middle;
     }
@@ -112,11 +142,36 @@
         content: "- - - - - - -";
         right: 5px;
     }
+    .wehelp__more{
+        justify-content: center;
+    }
     .laboratory{
         h2{
             font-size: 25px;
         }
     }
+    .stages .horizontal .active{
+        display: inline-block;
+        padding-right: 15px;
+    }
+    .underkey{
+        ul{
+            li{
+                .underkey--list{
+                    margin-bottom: 20px;
+                    margin-left: 115px;
+                }
+                .underkey--descr{
+                    width: 100%;
+                    max-width: 200px;
+                    text-align: center;
+                }
+            }
+        }
+
+    }
+
+
 }
 
 @media (max-width: 767px){
@@ -144,34 +199,50 @@
     .header{
         padding-top: 15px;
     }
-    .tab-item{
+    .wehelp .tab-item{
         width: 100%;
         text-align: center;
     }
-    .horizontal{
+    .wehelp .horizontal{
         flex-direction: column;
         border: none;
         padding-bottom: 0px;
         li{
             margin-bottom: 10px;
             padding-bottom: 10px;
-            border-bottom: 1px solid #333;
+            border-bottom: 1px solid #bfbebe;
+        }
+    }
+    .wehelp .tab-item {
+        text-align: center;
+        img{
+            display: inline-block;
+        }
+        span{
+            margin-top: 5px;
+            width: 100%;
+            text-align: center;
+            margin-left: 0px;
         }
     }
     .forwho{
         padding-bottom: 40px;
         padding-top: 30px;
         h2{
-            margin-bottom: 20px;
+            font-size: 27px;
+            margin-bottom: 15px;
         }
     }
     .wehelp{
-        padding-bottom: 90px;
+        padding-bottom: 40px;
         padding-top: 30px;
     }
     .whytrust{
         padding-top: 30px;
         padding-bottom: 5px;
+        h2{
+            font-size: 20px;
+        }
     }
     .whytrust--block__item{
         padding: 0px;
@@ -199,6 +270,33 @@
     .whytrust--block__item::after{
         display: none;
     }
+
+    .develop-doc__books--circle{
+        top: 110px;
+        right: 170px;
+        width: 120px;
+        height: 120px;
+        border-radius: 110px;
+    }
+    .develop-doc__books--circle::before{
+        left: -15px;
+        top: -15px;
+        width: 150px;
+        height: 150px;
+    }
+    .develop-doc__books--circle img{
+        width: 80px;
+        height: 80px;
+        margin-top: 20px;
+        margin-left: 25px;
+    }
+    .develop-doc__books--circle span{
+        top: 40px;
+        left: 5px;
+        font-size: 14px;
+        line-height: 1rem;
+    }
+
     .laboratory{
         img{
             text-align: center;
@@ -215,6 +313,7 @@
             font-size: 15px;
         }
     }
+
     .laboratory{
         h2{
             font-size: 20px;
@@ -223,7 +322,65 @@
             font-size: 15px;
         }
     }
+    .stages__tabs--img{
+        margin-left: calc(50% - 100px);
+    }
+    .stages--bg{
+        padding-top: 30px;
+    }
+    .stages {
+        h2{
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+        .horizontal{
+            text-align: center;
+            border-bottom: 1px solid #fff;
+            padding-bottom: 15px;
+            
+            .active{
+                margin-bottom: 10px;
+                span{
+                    margin-top: 10px;
+                }
+            }
+        }
+        .tabs{
+            display: block;
+        }
+        .tab-item{
+            text-align: center;
+        }
+    }
+    .underkey{
+        h2{
+            font-size: 20px;
+        
+        }
+        p{
+            font-size: 15px;
+        }
+        ul{
+            display: block;
+            li{
+                width: 100%;
+                display: block;
+                .underkey--list{
+                    display: block;
+                    text-align: center;
+                    margin-left: calc(50% - 25px);
+                }
+                .underkey--descr{
+                    display: block;
+                    max-width: 100%;
+                    margin: 0;
+                }
+            }
+        }
+
+    }
 }
+
 @media (max-width: 575px){
     .logo img{
         max-width: 120px;
@@ -240,15 +397,15 @@
             text-align: center;
         }
     }
-
+    .develop-doc__books--circle{
+        left: 40%;
+        top: 25%;
+    }
     .forwho__block--item__title{
         h3{
             font-size: 18px;
 
         }
-    }
-    .develop-doc__books--circle1{
-        left: 185px;
     }
     .header__infomenu--right .header__infomenu--call{
         display: none;
@@ -272,6 +429,7 @@
     .whytrust--block__item--img{
         display: none;
     }
+
 }
 @media (max-width: 480px){
     .logo{
@@ -288,33 +446,53 @@
     .header__infomenu--right{
         margin: 0px;
     }
-}
-@media (max-width: 414px){
-    .develop-doc__books--circle1{
-        width: 120px;
-        height: 120px;
-        left: 140px;
-        top: 70px;
-    }
-    .develop-doc__books--circle2{
-        width: 100px;
-        height: 100px;
-        top: 10px;
-        left: 10px;
-    }
-    .develop-doc__books--circle2{
+    .develop-doc__books--circle{
+        width: 95px;
+        height: 95px;
         img{
             width: 50px;
-            margin-top: 0px;
-            margin-left: 10px;
+            height: 50px;
+            margin-top: 25px;
+            margin-left: 15px;   
         }
-    }
-    .develop-doc__books--circle2{
         span{
-            top: 10px;
-            font-size: 12px;
+            top: 30px;
+            left: 5px;
+            font-size: 14px;
+            line-height: 1rem;
         }
     }
+    .develop-doc__books--circle::before{
+        left: -13px;
+        top: -13px;
+        width: 120px;
+        height: 120px;
+    }
+    .wehelp__more .more-btn{
+        display: block;
+    }
+    .wehelp .tab-item{
+        padding: 10px;
+    }
+    .more span{
+        text-align: center;
+        display: block;
+        margin-top: 5px;
+    }
+    .stages .horizontal{
+        li{
+        
+            span{
+                margin-top: 15px;
+                width: 100%;
+                padding: 5px;
+                margin: 0px;
+            }
+        }
+    }
+}
+@media (max-width: 414px){
+
 }
 @media (max-width: 360px){
     .develop-doc__books--circle1{
@@ -345,11 +523,9 @@
 }
 
 @media (max-width: 320px){
-    .develop-doc__books--circle1{
-        width: 100px;
-        height: 100px;
-        left: 100px;
-        top: 50px;
+    .develop-doc__books--circle{
+        left: 35%;
+        top: 20%;
     }
 }
 @media (min-width: 575px){
