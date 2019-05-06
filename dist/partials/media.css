@@ -43,7 +43,16 @@
   .stages .tab-item {
     margin: 0px 20px; }
   .underkey img {
-    margin: 0; } }
+    margin: 0px;
+    width: 100%; }
+  .underkey ul {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center; }
+    .underkey ul li {
+      width: 33%; }
+      .underkey ul li .underkey--descr {
+        width: 55%; } }
 
 @media (max-width: 991px) {
   .forwho__block:last-child {
@@ -90,7 +99,14 @@
     font-size: 25px; }
   .stages .horizontal .active {
     display: inline-block;
-    padding-right: 15px; } }
+    padding-right: 15px; }
+  .underkey ul li .underkey--list {
+    margin-bottom: 20px;
+    margin-left: 115px; }
+  .underkey ul li .underkey--descr {
+    width: 100%;
+    max-width: 200px;
+    text-align: center; } }
 
 @media (max-width: 767px) {
   .develop-doc h1 {
@@ -213,7 +229,24 @@
   .stages .tabs {
     display: block; }
   .stages .tab-item {
-    text-align: center; } }
+    text-align: center; }
+  .underkey h2 {
+    font-size: 20px; }
+  .underkey p {
+    font-size: 15px; }
+  .underkey ul {
+    display: block; }
+    .underkey ul li {
+      width: 100%;
+      display: block; }
+      .underkey ul li .underkey--list {
+        display: block;
+        text-align: center;
+        margin-left: calc(50% - 25px); }
+      .underkey ul li .underkey--descr {
+        display: block;
+        max-width: 100%;
+        margin: 0; } }
 
 @media (max-width: 575px) {
   .logo img {

@@ -438,3 +438,36 @@
           font-family: 'HelveticaNeueCyr-Roman';
           text-align: inherit;
           font-size: 14px; }
+
+.services {
+  background: url(../../img/nature.png) no-repeat right 80px top/auto;
+  padding-bottom: 80px;
+  padding-top: 80px; }
+  .services h2 {
+    font-family: 'GothamPro-Medium';
+    font-size: 30px;
+    color: #181a18; }
+  .services .services--item {
+    margin-top: 15px; }
+  .services .services--img {
+    display: inline-block;
+    vertical-align: top; }
+  .services .services--descr {
+    display: inline-block;
+    width: 80%;
+    margin-left: 20px; }
+  .services form {
+    background-color: #f1f1f1;
+    padding: 45px 70px; }
+    .services form input {
+      display: block;
+      width: 270px;
+      height: 54px;
+      border-radius: 27px;
+      border: 1px solid #e6e6e6;
+      border: none;
+      margin-bottom: 10px; }
+    .services form input::placeholder {
+      text-align: center;
+      font-family: 'GothamProRegular';
+      font-size: 14px; }
