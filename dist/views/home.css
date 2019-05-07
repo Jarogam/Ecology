@@ -666,3 +666,7 @@
 
 .ourteam__more {
   text-align: center; }
+
+.result--about {
+  background: url(../../img/icons/pattern.svg) repeat-x center/cover;
+  background-color: #336699; }
