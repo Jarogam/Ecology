@@ -1,3 +1,11 @@
+@media (max-width: 1332px){
+    .services--form img{
+        width: 100%;
+        max-width: 570px;
+        right: 50px;
+        top: -20px;
+    }
+}
 @media (max-width: 1200px){
     .nav{
         position: fixed;
@@ -42,17 +50,18 @@
     .wehelp .tab-item{
         width: 45%;
     }
-    .whytrust--block__item {
+    .whytrust-list__item {
         padding-right: 5px;
+        margin-right: 30px;
     }
-    .whytrust--block__item .whytrust--block__item--title{
+    .whytrust-list__item .whytrust-list__item--title{
         font-size: 13px;
     }
-    .whytrust--block__item::after{
+    .whytrust-list__item::after{
         content: "- - - - - - - - - - - - -";
-        right: 10px;
+        right: -20px;
     }
-    .whytrust--block__item p{
+    .whytrust-list__item p{
         font-size: 12px;
     }
     .laboratory{
@@ -68,7 +77,7 @@
         }
     }
     .underkey{
-
+        padding-bottom: 30px;
         img {
             margin: 0px;
             width: 100%;
@@ -88,6 +97,27 @@
             }
         }
 
+    }
+    .services{
+        padding-top: 20px;
+        h2{
+            margin-bottom: 40px;
+        }
+    }
+
+    .services--text__item--descr{
+        margin-left: 0px;
+    }
+    
+    .delivery-map{
+        margin-top: 70px;
+        img{
+            width: 100%;
+        }
+    }
+    .delivery--map-desc{
+        max-width: 140px;
+        bottom: -20px;
     }
 }
 @media (max-width: 991px){
@@ -138,9 +168,9 @@
         width: 60%;
         vertical-align: middle;
     }
-    .whytrust--block__item::after{
+    .whytrust-list__item::after{
         content: "- - - - - - -";
-        right: 5px;
+        right: -25px;
     }
     .wehelp__more{
         justify-content: center;
@@ -150,28 +180,85 @@
             font-size: 25px;
         }
     }
-    .stages .horizontal .active{
-        display: inline-block;
-        padding-right: 15px;
+    .stages{
+        .horizontal{
+            li{
+                span{
+                    margin: 0;
+                    width: 100%;
+                }
+            }
+            .active{
+                display: inline-block;
+                padding-right: 15px;
+            }
+        }
     }
     .underkey{
         ul{
             li{
+                text-align: center;
                 .underkey--list{
-                    margin-bottom: 20px;
-                    margin-left: 115px;
+                    margin-bottom: 15px;
+                    margin-left: 0px;
                 }
                 .underkey--descr{
                     width: 100%;
-                    max-width: 200px;
                     text-align: center;
+                    margin: 0;
                 }
             }
         }
 
     }
-
-
+    .services{
+        h2{
+            margin-bottom: 40px;
+        }
+    }
+    .services--form{
+        max-width: 370px;
+        margin: 0 auto;
+        
+        img{
+            top: -46px;
+            left: 0;
+            max-width: 100%;
+        }
+    }
+    .services--form input[type=submit]{
+        max-width: 100%;
+    }
+    .services--text__item--img{
+        margin-bottom: 10px;
+    }
+    .services--text{
+        display: flex;
+        margin: 0;
+    }
+    .services--text__item{
+        margin: 0;
+        width: 33%;
+        text-align: center;
+    }
+    .services--text__item--descr{
+        margin-left: 0px;
+        width: 100%;
+        br{
+            display: none;
+        }
+        span{
+            margin-bottom: 5px;
+            display: inline-block;
+        }
+    }
+    .delivery--letter__open {
+        right: calc(50% - 135px);
+        left: calc(50% - 135px);
+    }
+    .delivery-map{
+        margin-top: 0px;
+    }
 }
 
 @media (max-width: 767px){
@@ -244,33 +331,35 @@
             font-size: 20px;
         }
     }
-    .whytrust--block__item{
+    .whytrust-list__item{
         padding: 0px;
     }
     .whytrust h2{
         margin-bottom: 30px;
     }
-    .whytrust--block{
+    .whytrust-list{
         flex-direction: column;
         text-align: center;
     }
-    .whytrust--block__item{
+    .whytrust-list__item{
         width: 100%;
         margin-bottom: 20px;
     }
-    .whytrust--block__item img{
+    .whytrust-list__item img{
         margin-bottom: 10px;
     }
-    .whytrust--block__item--img{
+    .whytrust-list__item--img{
         left: 245px;
     }
-    .whytrust--block__item span{
+    .whytrust-list__item span{
         position: initial;
     }
-    .whytrust--block__item::after{
+    .whytrust-list__item::after{
         display: none;
     }
-
+    .whytrust-list__item--img::after{
+        display: none;
+    }
     .develop-doc__books--circle{
         top: 110px;
         right: 170px;
@@ -379,6 +468,19 @@
         }
 
     }
+    .services{
+        padding-bottom: 40px;
+    }
+    .services--text{
+        display: block;
+        margin-bottom: 35px;
+    }
+    .services--text__item{
+        width: 100%;
+    }
+    .delivery{
+        padding-top: 40px;
+    }
 }
 
 @media (max-width: 575px){
@@ -401,7 +503,7 @@
         left: 40%;
         top: 25%;
     }
-    .forwho__block--item__title{
+    .forwho__block--title{
         h3{
             font-size: 18px;
 
@@ -411,7 +513,7 @@
         display: none;
     }
 
-    .forwho__block--item{
+    .forwho__block{
         img{
             width: 50%;
         }
@@ -426,9 +528,7 @@
         margin-bottom: 195px;
         margin-left: 20px;
     }
-    .whytrust--block__item--img{
-        display: none;
-    }
+
 
 }
 @media (max-width: 480px){
@@ -489,6 +589,12 @@
                 margin: 0px;
             }
         }
+    }
+    .services--form img{
+        display: none;
+    }
+    .delivery--map-desc{
+        bottom: -50px;
     }
 }
 @media (max-width: 414px){

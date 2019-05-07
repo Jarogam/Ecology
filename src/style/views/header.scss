@@ -4,8 +4,6 @@
     width: 100%;
 }
 
-
-
 .header__infomenu{
 margin-bottom: 5px;
     // button{
@@ -14,7 +12,8 @@ margin-bottom: 5px;
 }
 
 .header__infomenu--call{
-    margin-top: 10px;
+    display: flex;
+    align-items: center;
 }
 .header__infomenu--call__link{
     color: #000;
@@ -33,7 +32,6 @@ margin-bottom: 5px;
     background-color: #ff6633;
     padding: 5px;
     color: #fff;
-    margin-bottom: 15px;
     text-decoration: none;
     text-transform: uppercase;
     vertical-align: super;
@@ -43,12 +41,16 @@ margin-bottom: 5px;
     text-decoration: none;
     color: #000;
 }
-
+.header__infomenu--left{
+    display: flex;
+    align-items: center;
+}
 .header__infomenu--left__text{
     display: inline-block;
     border-left: 2px solid #fff;
     vertical-align: sub;
     margin-left: 15px;
+    margin-bottom: 0px;
     padding-left: 25px;
     color: #336699;
     font-size: 12px;

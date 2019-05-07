@@ -5,12 +5,10 @@ if(isset($_POST['submit'])){
 
 $to = "Elena357910@yandex.com";  
 $from = "Elena357910@yandex.com"; 
-$s140000="s140000";
-$s190000="s190000";
-$first_name = $_POST['first_name'];
+$first_name = $_POST['name'];
 $email = $_POST['email'];
 $phone = $_POST['phone'];
-$subject = "Форма отправки сообщений с сайта zaga";
+$subject = "Форма отправки сообщений с сайта Екология";
      
 
 if (!preg_match("/([\w\-]+\@[\w\-]+\.[\w\-]+)/", $email))
