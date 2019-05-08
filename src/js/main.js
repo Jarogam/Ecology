@@ -15,14 +15,23 @@ jQuery(document).ready(function($) {
 });
 
 // toggle 
-$('.tabs_animate').tabslet({
+$(document).ready(function () {
+    $('.tabs_animate').tabslet({
         mouseevent: 'click',
         attribute: 'href',
         animation: true
     });
-$('.tabs-active').tabslet({
-    active: 2
+    $('.tabs-active').tabslet({
+        active: 2,
+    });
 });
+
+// $('.tabs_hover').tabslet({
+//     mouseevent: 'hover',
+//     attribute: 'href',
+//     animation: false
+// });
+
 
 //  popup
 $('#popup1').popup();
@@ -37,6 +46,7 @@ $('#popup1').popup();
 var swiper = new Swiper('.swiper-container', {
     slidesPerView: 3,
     spaceBetween: 30,
+    loop: true,
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
@@ -50,16 +60,16 @@ var swiper = new Swiper('.swiper-container', {
             spaceBetween: 30
         },
         768: {
-            slidesPerView: 3,
+            slidesPerView: 1,
             spaceBetween: 30
         },
         992: {
-            slidesPerView: 3,
+            slidesPerView: 2,
             spaceBetween: 30
         },
         1200: {
-            slidesPerView: 3,
-            spaceBetween: 30
+            slidesPerView: 2,
+            spaceBetween: 20
         }
 
     }

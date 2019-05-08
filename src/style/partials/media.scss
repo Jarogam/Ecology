@@ -6,6 +6,11 @@
         top: -20px;
     }
 }
+// @media (min-width: 992px) and (max-width: 1200px){
+//     .swiper-slide__item--descr ul{
+//         line-height: 1rem;
+//     }
+// }
 @media (max-width: 1200px){
     .nav{
         position: fixed;
@@ -118,6 +123,17 @@
     .delivery--map-desc{
         max-width: 140px;
         bottom: -20px;
+    }
+    .result--about .result--about__member--doc{
+        img{
+            width: 100%;
+        }
+    }
+    .result--about__social ul li{
+        margin-top: 10px;
+    }
+    .result--about__social ul li span:first-child{
+        padding: 7px;
     }
 }
 @media (max-width: 991px){
@@ -258,6 +274,39 @@
     }
     .delivery-map{
         margin-top: 0px;
+    }
+    .result--about__member--doc{
+        width: 100%;
+        display: inline-block;
+        max-width: 200px;
+        img{
+            
+        }
+    }
+    .result--about__text{
+        width: 45%;
+        display: inline-block;
+        .result--about__text--title{
+            font-size: 20px;
+        }
+        .result--about__text--subtitle{
+            font-size: 14px;
+        }
+        .result--about__text--descr{
+            font-size: 13px;
+        }
+    }
+    .result--about__writeus{
+        width: 25%;
+        display: inline-block;
+        .result--about__member{
+            margin-top: -20px;
+            margin-bottom: 0;
+        }
+    }
+    .result--about__social{
+        width: 15%;
+        display: inline-block;
     }
 }
 
@@ -481,6 +530,56 @@
     .delivery{
         padding-top: 40px;
     }
+    
+    .result--about{
+        display: block;
+        padding-bottom: 25px;
+    }
+    .result--about .result--about__member--doc img{
+        width: 100%;
+    }
+    .result--about__text{
+        width: 100%;
+        .result--about__text--title{
+     
+        }
+        .result--about__text--subtitle{
+     
+        }
+        .result--about__text--descr{
+            padding: 0px 40px;
+        }
+    }
+    .result--about__text--descr::before{
+        left: 25px;
+    }
+    .result--about__text--descr::after{
+        right: 25px;
+    }
+    .result--about__writeus{
+        display: block;
+        width: 100%;
+
+    }
+    .result--about__writeus .result--about__member{
+        margin: 0;
+    }
+    .result--about__social{
+        display: block;
+        width: 100%;
+        ul{
+            overflow: hidden;
+            display: flex;
+            justify-content: space-evenly;
+            li:first-child{
+                margin-top: 10px;
+            }
+        }
+    }
+
+
+
+
 }
 
 @media (max-width: 575px){

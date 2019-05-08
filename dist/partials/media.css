@@ -75,7 +75,10 @@
       width: 100%; }
   .delivery--map-desc {
     max-width: 140px;
-    bottom: -20px; } }
+    bottom: -20px; }
+  .result--about .result--about__member--doc {
+    margin: 65px 0 0 15px;
+    width: 100%; } }
 
 @media (max-width: 991px) {
   .forwho__block:last-child {
