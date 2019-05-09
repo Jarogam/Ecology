@@ -458,27 +458,27 @@
     color: #181a18;
     margin-bottom: 50px; }
 
-.services--form {
+.form {
   background-color: #fff;
   box-shadow: 0 12px 60px rgba(0, 0, 0, 0.1);
   border-radius: 6px;
   padding: 50px;
   text-align: center;
   max-width: 370px; }
-  .services--form img {
+  .form img {
     position: absolute;
     top: -80px;
     right: -15%;
     z-index: -1; }
-  .services--form span {
+  .form span {
     font-family: 'GothamPro-Medium';
     font-size: 20px;
     color: #181a18; }
-  .services--form p {
+  .form p {
     font-family: 'HelveticaNeueCyr-Roman';
     font-size: 14px;
     color: #181a18; }
-  .services--form input {
+  .form input {
     display: inline-block;
     text-align: center;
     width: 100%;
@@ -487,22 +487,30 @@
     border: 1px solid #e6e6e6;
     background-color: #ffffff;
     margin-bottom: 10px; }
-  .services--form input:focus {
+  .form input:last-child {
+    margin-bottom: 25px; }
+  .form input:focus {
     outline: none; }
-  .services--form input::placeholder {
+  .form input::placeholder {
     color: #181a18;
     text-align: center;
     font-family: 'GothamProRegular';
     font-size: 14px;
     outline: none; }
-  .services--form input[type=submit] {
+  .form input[type=submit] {
     border-radius: 15px;
+    cursor: pointer;
     width: 100%;
     max-width: 240px;
     display: inline-block;
     box-shadow: 0 8px 30px rgba(255, 112, 67, 0.3), inset 0 -3px 2px rgba(0, 0, 0, 0.3);
     border-radius: 6px;
     background-image: linear-gradient(to top, #ff6633 0%, #f59840 100%); }
+  .form input[type=submit]:hover {
+    color: #fff;
+    background-color: #f59840;
+    box-shadow: 0 8px 30px rgba(255, 112, 67, 0.3), inset 0 0px 0px rgba(0, 0, 0, 0);
+    text-decoration: none; }
 
 .services--text__item {
   margin-bottom: calc(30px + -4%); }
@@ -648,6 +656,7 @@
   align-items: center; }
   .swiper-slide img {
     max-width: 370px;
+    max-height: 270px;
     height: 100%; }
 
 .swiper-navigaton {
@@ -680,44 +689,21 @@
 .swiper-button-next:hover, .swiper-button-prev:hover {
   color: #ff6633; }
 
-.swiper-slide__item--descr {
-  text-align: left;
-  background-color: #f7f7f7;
-  padding: 25px;
-  max-width: 370px;
-  height: 280px; }
-  .swiper-slide__item--descr span:nth-child(2) {
-    margin-bottom: 15px;
-    display: block; }
-  .swiper-slide__item--descr span:nth-child(3) {
-    display: block;
-    font-family: 'HelveticaNeueCyr-Medium';
-    font-size: 14px;
-    color: #181a18; }
-  .swiper-slide__item--descr ul {
-    list-style: none;
-    margin-bottom: 0px;
-    padding-left: 0px; }
-    .swiper-slide__item--descr ul li {
-      font-family: 'HelveticaNeueCyr-Roman';
-      font-size: 14px;
-      color: #181a18; }
+.swiper-slide__item {
+  max-height: 270px; }
 
-.swiper-slide__item--descr__name {
-  font-family: 'GothamPro-Medium';
-  font-size: 16px;
-  color: #181a18; }
+.swiper-slide__item:hover .swiper-slide__item--teammember {
+  transform: translateY(-220%); }
 
-.swiper-slide__item--descr__title {
-  font-family: 'HelveticaNeueCyr-Roman';
-  font-size: 14px;
-  color: #336699; }
+.swiper-slide__item:hover .swiper-slide__item--teammember__hover {
+  transform: translateY(-100%); }
 
-.swiper-slide__item--teammember {
-  background-color: #f7f7f7;
-  position: relative; }
-  .swiper-slide__item--teammember img {
-    opacity: 0.15; }
+.descr-active {
+  display: block; }
+  .descr-active .swiper-slide__item--teammember__hover {
+    transform: translateY(-220%); }
+  .descr-active .swiper-slide__item--descr {
+    transform: translateY(-200%); }
 
 .swiper-slide__item--more {
   display: block;
@@ -732,7 +718,8 @@
 .swiper-slide__item--teammember--item {
   position: absolute;
   top: calc(50% - 37px);
-  width: 100%; }
+  width: 100%;
+  max-height: 270px; }
   .swiper-slide__item--teammember--item span {
     display: inline-block;
     width: 100%; }
@@ -740,6 +727,7 @@
     margin-bottom: 80px; }
 
 .swiper-slide__item--teammember__hover {
+  transform: translateY(-100%);
   position: relative;
   box-shadow: 5px 5px 12px 0px rgba(0, 0, 60, 0.1); }
   .swiper-slide__item--teammember__hover a {
@@ -770,9 +758,65 @@
     font-size: 10px;
     display: block; }
 
+.swiper-slide__item--descr__close {
+  position: absolute;
+  right: 30px;
+  top: 12px;
+  font-size: 25px;
+  color: #606660;
+  text-decoration: none; }
+
+.swiper-slide__item--descr__close:hover {
+  text-decoration: none;
+  color: #000; }
+
+.swiper-slide__item--descr {
+  transform: translateY(-310%);
+  text-align: left;
+  background-color: #f7f7f7;
+  padding: 25px;
+  max-width: 370px;
+  height: 270px;
+  transition: all 0.3s ease-in-out; }
+  .swiper-slide__item--descr span:nth-child(2) {
+    margin-bottom: 15px;
+    display: block; }
+  .swiper-slide__item--descr span:nth-child(3) {
+    display: block;
+    font-family: 'HelveticaNeueCyr-Medium';
+    font-size: 14px;
+    color: #181a18; }
+  .swiper-slide__item--descr ul {
+    list-style: none;
+    margin-bottom: 0px;
+    padding-left: 0px; }
+    .swiper-slide__item--descr ul li {
+      font-family: 'HelveticaNeueCyr-Roman';
+      font-size: 14px;
+      color: #181a18; }
+
+.swiper-slide__item--descr__name {
+  font-family: 'GothamPro-Medium';
+  font-size: 16px;
+  color: #181a18; }
+
+.swiper-slide__item--descr__title {
+  font-family: 'HelveticaNeueCyr-Roman';
+  font-size: 14px;
+  color: #336699; }
+
+.swiper-slide__item--teammember {
+  background-color: #f7f7f7;
+  overflow: hidden;
+  position: relative;
+  z-index: 2;
+  transition: all 0.3s ease;
+  max-height: 270px; }
+  .swiper-slide__item--teammember img {
+    opacity: 0.15; }
+
 .result {
   padding-bottom: 50px;
-  padding-top: 50px;
   text-align: center; }
   .result h2 {
     font-family: 'GothamPro-Medium';
@@ -781,7 +825,8 @@
   .result p {
     font-family: 'HelveticaNeueCyr-Roman';
     font-size: 18px;
-    color: #181a18; }
+    color: #181a18;
+    margin-bottom: 40px; }
 
 .result--about {
   background: url(../../img/icons/pattern.svg) repeat-x center/cover;
@@ -836,7 +881,7 @@
   .result--about__social ul {
     padding-left: 0px;
     list-style: none;
-    margin: 25px 25px 0 0; }
+    margin: 0; }
     .result--about__social ul li {
       margin-top: 25px;
       text-align: center; }

@@ -45,7 +45,8 @@
 
     .header {
         &__infomenu--call {
-            margin-right: 70px;
+            // margin-right: 70px;
+            text-align: center;
         }
     }
     .develop-doc__books--circle{
@@ -113,7 +114,9 @@
     .services--text__item--descr{
         margin-left: 0px;
     }
-    
+    .delivery{
+        padding-top: 20px;
+    }
     .delivery-map{
         margin-top: 70px;
         img{
@@ -123,6 +126,9 @@
     .delivery--map-desc{
         max-width: 140px;
         bottom: -20px;
+    }
+    .ourteam{
+        padding-top: 20px;
     }
     .result--about .result--about__member--doc{
         img{
@@ -135,8 +141,23 @@
     .result--about__social ul li span:first-child{
         padding: 7px;
     }
+    .footer{
+        padding-top: 15px;
+    }
+    .footer--contacts{
+        margin-top: 40px;
+    }
+    .footer--contacts__form img{
+        width: 100%;
+        left: -35px;
+        top: -35px;
+        height: 100%;
+    }
 }
 @media (max-width: 991px){
+    .header__infomenu--call{
+        margin-top: 15px;
+    }
     .forwho__block:last-child{
         margin-top: 20px;
     }
@@ -184,6 +205,10 @@
         width: 60%;
         vertical-align: middle;
     }
+    .whytrust{
+        padding-bottom: 30px;
+        padding-top: 45px;
+    }
     .whytrust-list__item::after{
         content: "- - - - - - -";
         right: -25px;
@@ -192,6 +217,7 @@
         justify-content: center;
     }
     .laboratory{
+        padding-top: 40px;
         h2{
             font-size: 25px;
         }
@@ -227,12 +253,16 @@
         }
 
     }
+    .underkey ul li .underkey--number{
+        margin-left: 0px;
+        margin-bottom: 15px;
+    }
     .services{
         h2{
             margin-bottom: 40px;
         }
     }
-    .services--form{
+    .form{
         max-width: 370px;
         margin: 0 auto;
         
@@ -242,7 +272,7 @@
             max-width: 100%;
         }
     }
-    .services--form input[type=submit]{
+    .form input[type=submit]{
         max-width: 100%;
     }
     .services--text__item--img{
@@ -308,18 +338,32 @@
         width: 15%;
         display: inline-block;
     }
+    .footer--contacts__form img{
+        left: -10px;
+    }
+    .stages--bg{
+        padding-top: 30px;
+    }
+    .stages h2{
+        margin-bottom: 30px;
+    }
 }
 
 @media (max-width: 767px){
     .develop-doc h1 {
-        font-size: 35px;
+        font-size: 25px;
         span{
             font-size: 25px;
         }
     }
+    .header__infomenu--call{
+        display: block;
+        margin-top: 15px;
+    }
     .header__infomenu--call a:first-child {
         display: block;
         font-size: 20px;
+        
     }
     .header__infomenu--call a:last-child {
         font-size: 12px;
@@ -365,7 +409,7 @@
         padding-bottom: 40px;
         padding-top: 30px;
         h2{
-            font-size: 27px;
+            font-size: 20px;
             margin-bottom: 15px;
         }
     }
@@ -495,8 +539,11 @@
             font-size: 20px;
         
         }
-        p{
+        span{
             font-size: 15px;
+        }
+        p{
+            font-size: 13px;
         }
         ul{
             display: block;
@@ -519,37 +566,77 @@
     }
     .services{
         padding-bottom: 40px;
+        h2{
+            font-size: 20px;
+        }
     }
     .services--text{
         display: block;
         margin-bottom: 35px;
+        span{
+            font-size: 15px;
+        }
+        p{
+            font-size: 13px;
+        }
     }
     .services--text__item{
         width: 100%;
     }
+    .form {
+        span{
+            font-size: 17px;
+        }
+        p{
+            font-size: 12px;
+        }
+    }
     .delivery{
         padding-top: 40px;
     }
-    
+    .delivery{
+        h2{
+            font-size: 20px;
+        }
+        p{
+            font-size: 15px;
+        }
+    }
+    .ourteam h2{
+        font-size: 20px;
+    }
+    .result {
+    h2{
+        font-size: 20px;
+    }
+    p{
+        font-size: 15px;
+    }
+    }
     .result--about{
         display: block;
         padding-bottom: 25px;
+        h2{
+            font-size: 20px;
+        }
     }
     .result--about .result--about__member--doc img{
         width: 100%;
     }
     .result--about__text{
         width: 100%;
-        .result--about__text--title{
-     
-        }
-        .result--about__text--subtitle{
-     
-        }
+
         .result--about__text--descr{
             padding: 0px 40px;
         }
     }
+    .swiper-slide__item--descr__name{
+        font-size: 14px;
+    }
+    .swiper-slide__item--title{
+        font-size: 13px;
+    }
+
     .result--about__text--descr::before{
         left: 25px;
     }
@@ -577,6 +664,20 @@
         }
     }
 
+    .footer h2{
+        margin-bottom: 20px;
+        font-size: 20px;
+    }
+    .footer--contacts{
+        text-align: center;
+        margin-top: 0px;
+    }
+    .footer--contacts__form{
+        margin-top: 20px;
+        img{
+            top: -5px;
+        }
+    }
 
 
 
@@ -626,9 +727,14 @@
     .header__navmenu .header__infomenu--call{
         margin-bottom: 195px;
         margin-left: 20px;
+        text-align: left;
     }
 
-
+    .popup_content{
+        img{
+            width: 100%;
+        }
+    }
 }
 @media (max-width: 480px){
     .logo{
@@ -689,12 +795,20 @@
             }
         }
     }
-    .services--form img{
+    .form img{
         display: none;
     }
     .delivery--map-desc{
         bottom: -50px;
     }
+    .form{
+        padding: 20px;
+        input{
+            display: block;
+            width: 100%;
+        }
+    }
+
 }
 @media (max-width: 414px){
 
@@ -737,4 +851,5 @@
     .header__navmenu .header__infomenu--call{
         display: none;
     }
+
 }

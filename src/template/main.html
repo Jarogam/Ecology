@@ -398,15 +398,15 @@
                         </div>
                     </div>
                     <div class="col-xl-5 offset-xl-2 col-lg-7">
-                        <div class="services--form">
+                        <div class="services--form form">
                             <img src="../img/nature.png" alt="">
-                            <form method="POST" action="send.php">
+                            <form method="POST" action="send.php" class="price">
                                 <span>Интересуют цены?</span>
                                 <p>Оставьте заявку и мы вышлем <br> прайс на почту</p>
-                                <input type="text" name="name" placeholder="ФИО">
-                                <input type="email" name="email" placeholder="Эл. почта">
-                                <input type="tel" name="phone" placeholder="Телефон">
-                                <input type="submit" value="Получить прайс на почту" class="more-btn">
+                                <input type="text" name="name" placeholder="ФИО" required>
+                                <input type="email" name="email" placeholder="Эл. почта" required>
+                                <input type="tel" name="phone" placeholder="Телефон" required>
+                                <input type="submit" name="sendMail" value="Получить прайс на почту" class="more-btn">
                             </form>
                         </div>
                     </div>
@@ -448,18 +448,40 @@
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <div class="swiper-slide__item">
-                                <div class="swiper-slide__item--descr">
-                                    <span class="swiper-slide__item--descr__name">Давыдов Сергей</span>
-                                    <span class="swiper-slide__item--descr__title">Генеральный директор</span>
-                                    <span>Опыт работы:</span>
-                                    <ul>
-                                        <li>- Ведущий инженер аналитической лаборатории в ООО «ВНИИ 1»</li>
-                                        <li>- Инженер отдела охраны окружающей среды</li>
-                                        <li>- Начальник отдела охраны окружающей среды</li>
-                                        <li>- Генеральный директор</li>
-                                        <li>- Аспирантура на отделении экология</li>
-                                    </ul>
+                                <div class="swiper-slide__item">
+                                    <div class="swiper-slide__item--teammember">
+                                        <img src="../img/teammember.jpg" alt="teammember">
+                                        <div class="swiper-slide__item--teammember--item">
+                                            <span class="swiper-slide__item--descr__name">Варчук Александр</span>
+                                            <span class="swiper-slide__item--descr__title">Главный инженер проекта</span>
+                                            <a href="#!" class="swiper-slide__item--more">Узнать больше &#8250;</a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide__item--teammember__hover">
+                                        <img src="../img/teammember.jpg" alt="teammember">
+                                        <div class="swiper-slide__item--teammember__hover--item">
+                                            <div class="swiper-slide__item--teammember__hover--item__descr">
+                                                <span class="swiper-slide__item--descr__name">Варчук Александр</span>
+                                                <span class="swiper-slide__item--descr__title">Главный инженер проекта</span>
+                                            </div>
+                                            <a href="#!" class="swiper-slide__item--more">Узнать больше &#8250;</a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide__item--descr">
+                                        <a href="#!" class="swiper-slide__item--descr__close">&times;</a>
+                                        <span class="swiper-slide__item--descr__name">Давыдов Сергей</span>
+                                        <span class="swiper-slide__item--descr__title">Генеральный директор</span>
+                                        <span>Опыт работы:</span>
+                                        <ul>
+                                            <li>- Ведущий инженер аналитической лаборатории в ООО «ВНИИ 1»</li>
+                                            <li>- Инженер отдела охраны окружающей среды</li>
+                                            <li>- Начальник отдела охраны окружающей среды</li>
+                                            <li>- Генеральный директор</li>
+                                            <li>- Аспирантура на отделении экология</li>
+                                        </ul>
+                                    </div>
                                 </div>
+
 
                             </div>
                         </div>
@@ -473,10 +495,43 @@
                                         <a href="#!" class="swiper-slide__item--more">Узнать больше &#8250;</a>
                                     </div>
                                 </div>
+
+                                <div class="swiper-slide__item--teammember__hover">
+                                        <img src="../img/teammember.jpg" alt="teammember">
+                                        <div class="swiper-slide__item--teammember__hover--item">
+                                            <div class="swiper-slide__item--teammember__hover--item__descr">
+                                                <span class="swiper-slide__item--descr__name">Варчук Александр</span>
+                                                <span class="swiper-slide__item--descr__title">Главный инженер проекта</span>
+                                            </div>
+                                            <a href="#!" class="swiper-slide__item--more">Узнать больше &#8250;</a>
+                                        </div>
+                                    </div>
+
+                                <div class="swiper-slide__item--descr">
+                                    <a href="#!" class="swiper-slide__item--descr__close">&times;</a>
+                                    <span class="swiper-slide__item--descr__name">Давыдов Сергей</span>
+                                    <span class="swiper-slide__item--descr__title">Генеральный директор</span>
+                                    <span>Опыт работы:</span>
+                                    <ul>
+                                        <li>- Ведущий инженер аналитической лаборатории в ООО «ВНИИ 1»</li>
+                                        <li>- Инженер отдела охраны окружающей среды</li>
+                                        <li>- Начальник отдела охраны окружающей среды</li>
+                                        <li>- Генеральный директор</li>
+                                        <li>- Аспирантура на отделении экология</li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div class="swiper-slide__item">
+                                <div class="swiper-slide__item--teammember">
+                                    <img src="../img/teammember.jpg" alt="teammember">
+                                    <div class="swiper-slide__item--teammember--item">
+                                        <span class="swiper-slide__item--descr__name">Варчук Александр</span>
+                                        <span class="swiper-slide__item--descr__title">Главный инженер проекта</span>
+                                        <a href="#!" class="swiper-slide__item--more">Узнать больше &#8250;</a>
+                                    </div>
+                                </div>
                                 <div class="swiper-slide__item--teammember__hover">
                                     <img src="../img/teammember.jpg" alt="teammember">
                                     <div class="swiper-slide__item--teammember__hover--item">
@@ -487,7 +542,21 @@
                                         <a href="#!" class="swiper-slide__item--more">Узнать больше &#8250;</a>
                                     </div>
                                 </div>
+                                <div class="swiper-slide__item--descr">
+                                    <a href="#!" class="swiper-slide__item--descr__close">&times;</a>
+                                    <span class="swiper-slide__item--descr__name">Давыдов Сергей</span>
+                                    <span class="swiper-slide__item--descr__title">Генеральный директор</span>
+                                    <span>Опыт работы:</span>
+                                    <ul>
+                                        <li>- Ведущий инженер аналитической лаборатории в ООО «ВНИИ 1»</li>
+                                        <li>- Инженер отдела охраны окружающей среды</li>
+                                        <li>- Начальник отдела охраны окружающей среды</li>
+                                        <li>- Генеральный директор</li>
+                                        <li>- Аспирантура на отделении экология</li>
+                                    </ul>
+                                </div>
                             </div>
+
                         </div>
 
                     </div>
@@ -534,23 +603,28 @@
                     <div class="result--about__social">
                         <ul>
                             <li>
-                                <span>
-                                    <img src="../img/icons/whatsapp.svg" alt="whatsapp">
-                                </span>
-                                <span>Whatsapp</span> 
+                                <a href="#!">
+                                    <span>
+                                        <img src="../img/icons/whatsapp.svg" alt="whatsapp">
+                                    </span>
+                                    <span>Whatsapp</span>
+                                </a>
                             </li>
                             <li>
-                                <span>
-                                    <img src="../img/icons/vk.svg" alt="vk">
-                                </span>
-
-                                <span>VK</span> 
+                                <a href="#!">
+                                    <span>
+                                        <img src="../img/icons/vk.svg" alt="vk">
+                                    </span>
+                                    <span>VK</span> 
+                                </a>
                             </li>
                             <li>
-                                <span>
-                                    <img src="../img/icons/instagram.svg" alt="instagram">
-                                </span>
-                                <span>Direct</span> 
+                                <a href="#!">
+                                    <span>
+                                        <img src="../img/icons/instagram.svg" alt="instagram">
+                                    </span>
+                                    <span>Direct</span> 
+                                </a>
                             </li>
                         </ul>
                     </div>
@@ -558,51 +632,5 @@
             </div>
         </section>
 
+
 </main>
-<!-- <div class="result">
-<div class="container">
-    <div class="result--about">
-        <div class="1">
-            <img src="../img/docum.png" class="result--about__member--doc" alt="docum">
-        </div>
-        <div class="1">
-            <h3 class="result--about__title">Это не пустые слова</h3>
-            <span class="result--about__subtitle">— все прописано в договоре</span>
-            <p class="result--about__text">Мы уверены в своем профессионализме поэтому гарантируем результат, в
-                противном случае мы вернем вам деньги</p>
-        </div>
-        <div class="1">
-            .
-            <img src="../img/man.jpg" class="result--about__member" alt="man">
-            <span>Напишите мне:</span>
-
-        </div>
-        <div class="1">
-            <ul>
-                <li>
-                    <span>
-                        <img src="../img/icons/whatsapp.svg" alt="whatsapp">
-                    </span>
-                    Whatsapp
-                </li>
-                <li>
-                    <span>
-                        <img src="../img/icons/vk.svg" alt="vk">
-                    </span>
-
-                    VK
-                </li>
-                <li>
-                    <span>
-                        <img src="../img/icons/instagram.svg" alt="instagram">
-                    </span>
-                    Direct
-                </li>
-            </ul>
-        </div>
-    </div>
-</div>
-</div> -->
-
-               
-               
