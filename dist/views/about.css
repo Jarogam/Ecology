@@ -1,0 +1,112 @@
+.we-are {
+  padding-top: 50px;
+  padding-bottom: 50px; }
+  .we-are h2 {
+    text-align: center; }
+  .we-are .we-are_img img {
+    width: 100%; }
+  .we-are .we-are_social ul {
+    padding-left: 0px;
+    list-style: none; }
+    .we-are .we-are_social ul li {
+      float: left;
+      padding: 5px; }
+      .we-are .we-are_social ul li a {
+        color: #fff; }
+
+ul.social-icons {
+  margin-top: 10px; }
+
+.social-icons li {
+  vertical-align: top;
+  display: inline;
+  height: 100px; }
+
+.social-icons a {
+  color: #fff;
+  text-decoration: none; }
+
+.fa-facebook {
+  padding: 10px 14px;
+  -o-transition: .5s;
+  -ms-transition: .5s;
+  -moz-transition: .5s;
+  -webkit-transition: .5s;
+  transition: .5s;
+  background-color: #322f30; }
+
+.fa-facebook:hover {
+  background-color: #3d5b99; }
+
+.fa-twitter {
+  padding: 10px 12px;
+  -o-transition: .5s;
+  -ms-transition: .5s;
+  -moz-transition: .5s;
+  -webkit-transition: .5s;
+  transition: .5s;
+  background-color: #322f30; }
+
+.fa-twitter:hover {
+  background-color: #00aced; }
+
+.fa-send {
+  padding: 10px 14px;
+  -o-transition: .5s;
+  -ms-transition: .5s;
+  -moz-transition: .5s;
+  -webkit-transition: .5s;
+  transition: .5s;
+  background-color: #2f2f32; }
+
+.fa-send:hover {
+  background-color: #256fb4; }
+
+.fa-instagram {
+  padding: 10px 14px;
+  -o-transition: .5s;
+  -ms-transition: .5s;
+  -moz-transition: .5s;
+  -webkit-transition: .5s;
+  transition: .5s;
+  background-color: #322f30; }
+
+.fa-instagram:hover {
+  background-color: #c4325e; }
+
+.fa-linkedin {
+  padding: 10px 14px;
+  -o-transition: .5s;
+  -ms-transition: .5s;
+  -moz-transition: .5s;
+  -webkit-transition: .5s;
+  transition: .5s;
+  background-color: #322f30; }
+
+.fa-linkedin:hover {
+  background-color: #0073a4; }
+
+.fa-github {
+  padding: 10px 14px;
+  -o-transition: .5s;
+  -ms-transition: .5s;
+  -moz-transition: .5s;
+  -webkit-transition: .5s;
+  transition: .5s;
+  background-color: #322f30; }
+
+.fa-github:hover {
+  background-color: #5a32a3; }
+
+.we-are_social_contacts a {
+  display: block;
+  color: #000;
+  text-decoration: none;
+  font-weight: 400; }
+
+.popup_content {
+  margin: 10px;
+  padding: 0 10px;
+  max-width: 60%;
+  border: 2px solid #444;
+  background: white; }

@@ -5,9 +5,12 @@
 @import "bootstrap.min.css";
 @import "jquery.fancybox.min.css";
 @import "swiper.min.css";
+@import url(https://fonts.googleapis.com/css?family=Lato);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+
 // @import "fontawesome.min.css";
 // @import "brands.min.css";
-// /* @import "../../assets/font-awesome.min.css"; */
+
 
 
 /*
@@ -24,7 +27,9 @@
 @import "views/header";
 @import "views/home";
 @import "views/footer";
-
+@import "views/services";
+@import "views/ourworks.scss";
+@import "views/about.scss";
 @import "partials/media";
 
 
